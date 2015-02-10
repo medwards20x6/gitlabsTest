@@ -9,4 +9,4 @@ git checkout master &> .labState/log
 git cherry-pick $COMMIT &> .labState/log
 git branch -D lab1 &> .labState/log
 
-git reset --hard master
+git reset --hard master &> .labState/log
