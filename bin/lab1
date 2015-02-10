@@ -11,5 +11,6 @@ git add file1
 
 git commit -a -m "lab1 commit1"
 
+clear
 git status
 git branch -vv
