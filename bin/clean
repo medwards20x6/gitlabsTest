@@ -1,7 +1,7 @@
 #!/bin/sh
 
 git add bin/*
-git commit -m "bin changes"
+git commit -m "bin changes" &> .labState/log
 COMMIT=`git rev-parse HEAD`
 
 rm file1 &> .labState/log
