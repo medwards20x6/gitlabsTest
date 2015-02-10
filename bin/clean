@@ -12,3 +12,5 @@ git branch -D lab1 &> .labState/log
 
 git reset --hard master &> .labState/log
 git clean -df . &> .labState/log
+
+git branch -vv
