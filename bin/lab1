@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git commit -a -m "starting lab, committing changes"
+
 echo Lab 1
 git checkout -b lab1
 git push -u
