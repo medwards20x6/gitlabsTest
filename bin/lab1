@@ -17,8 +17,8 @@ git add file1
 echo 'Creating commit1'
 git commit -a -m "lab1 commit1" &> .labState/log
 
-echo '\n\n'
-echo 'git status\n'
+printf '\n\n'
+printf 'git status\n'
 git status
-echo 'git branch -vv\n'
+printf 'git branch -vv\n'
 git branch -vv
