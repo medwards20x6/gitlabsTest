@@ -17,12 +17,8 @@ git add file1
 echo 'Creating commit1'
 git commit -a -m "lab1 commit1" &> .labState/log
 
-echo 'Creating test file "file2"'
-echo "This is a file" > file2
-git add file2
-
-echo 'Creating test file "file3"'
-echo "This is a file" > file3
+echo "This is a file" >> file1
+git commit --amend --use-existing-message
 
 printf '\n ### git status ###\n\n'
 git status
