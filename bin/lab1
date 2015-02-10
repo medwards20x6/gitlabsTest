@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clean
-git commit -a -m "starting lab, committing changes"
+git commit -a -m "starting lab, committing changes" >& .labState/log
 
 echo Lab 1
 git checkout -b lab1 >& .labState/log
