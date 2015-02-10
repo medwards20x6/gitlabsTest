@@ -20,5 +20,5 @@ git commit -a -m "lab1 commit1" &> .labState/log
 printf '\n'
 printf 'git status\n\n'
 git status
-printf 'git branch -vv\n\n'
+printf '\ngit branch -vv\n\n'
 git branch -vv
