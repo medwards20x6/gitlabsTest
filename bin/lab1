@@ -1,6 +1,6 @@
 #!/bin/bash
 
-clean
+clean &> .labState/log
 git commit -a -m "starting lab, committing changes" &> .labState/log
 
 clear
