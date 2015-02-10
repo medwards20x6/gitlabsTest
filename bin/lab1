@@ -2,5 +2,8 @@
 
 echo Lab 1
 git checkout -b lab1
+git push -u
 
 echo "This is a file" > file1
+
+git commit -a -m "lab1 commit1"
