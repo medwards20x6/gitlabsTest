@@ -12,6 +12,6 @@ git add file1
 
 git commit -a -m "lab1 commit1" &> .labState/log
 
-# clear
+clear
 git status
 git branch -vv
