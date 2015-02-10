@@ -6,7 +6,7 @@ COMMIT=`git rev-parse HEAD`
 
 rm file1 &> .labState/log
 git checkout master &> .labState/log
-git cherry-pick $COMMIT
+git cherry-pick $COMMIT &> .labState/log
 git branch -D lab1 &> .labState/log
 
 git reset --hard master
