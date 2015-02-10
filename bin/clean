@@ -1,6 +1,6 @@
 #!/bin/sh
 
-git reset HEAD &> .labState/log
+git reset HEAD &> .labState/log # unstage any changes
 git add bin/*
 git commit -m "bin changes" &> .labState/log
 COMMIT=`git rev-parse HEAD`
@@ -10,7 +10,7 @@ git checkout master &> .labState/log
 git cherry-pick $COMMIT &> .labState/log
 git branch -D lab1 &> .labState/log
 
-git reset --hard master &> .labState/log
-git clean -df . &> .labState/log
+git reset --hard master &> .labState/log # get rid of any tracked file changes (none?)
+git clean -df . &> .labState/log # get rid of any untracked files
 
 git branch -vv
