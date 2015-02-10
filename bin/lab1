@@ -12,4 +12,4 @@ git add file1
 git commit -a -m "lab1 commit1"
 
 git status
-gls
+git branch -vv
