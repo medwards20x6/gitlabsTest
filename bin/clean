@@ -2,7 +2,7 @@
 
 git add bin/*
 git commit -m "bin changes"
-COMMIT=git rev-parse HEAD
+COMMIT=`git rev-parse HEAD`
 
 rm file1 &> .labState/log
 git checkout master &> .labState/log
