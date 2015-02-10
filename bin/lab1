@@ -17,7 +17,6 @@ git add file1
 echo 'Creating commit1'
 git commit -a -m "lab1 commit1" &> .labState/log
 
-clear
 echo Lab 1
 git status
 git branch -vv
