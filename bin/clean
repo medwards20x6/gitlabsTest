@@ -1,5 +1,10 @@
 #!/bin/sh
 
+git add bin/*
+git commit -m "bin changes"
+COMMIT=git rev-parse HEAD
+
 rm file1 &> .labState/log
 git checkout master &> .labState/log
+git cherry-pick $COMMIT
 git branch -D lab1 &> .labState/log
