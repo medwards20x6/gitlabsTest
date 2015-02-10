@@ -4,8 +4,8 @@ clean
 git commit -a -m "starting lab, committing changes"
 
 echo Lab 1
-git checkout -b lab1
-git push -uf
+git checkout -b lab1 >& .labState/log
+git push -uf >& .labState/log
 
 echo "This is a file" > file1
 git add file1
