@@ -1,5 +1,6 @@
 #!/bin/sh
 
+git reset HEAD
 git add bin/*
 git commit -m "bin changes" &> .labState/log
 COMMIT=`git rev-parse HEAD`
