@@ -1,5 +1,5 @@
 #!/bin/sh
 
 rm file1
-git checkout master > .labState/log
-git branch -D lab1
+git checkout master &> .labState/log
+git branch -D lab1 &> .labState/log
