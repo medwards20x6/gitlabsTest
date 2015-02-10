@@ -3,15 +3,21 @@
 clean
 git commit -a -m "starting lab, committing changes" &> .labState/log
 
-echo Lab 1
+clear
+
+echo 'Creating branch "lab1"'
 git checkout -b lab1 &> .labState/log
+echo 'Pushing branch to server and setting up remote tracking'
 git push -uf &> .labState/log
 
+echo 'Creating test file "file1"'
 echo "This is a file" > file1
 git add file1
 
+echo 'Creating commit1'
 git commit -a -m "lab1 commit1" &> .labState/log
 
 clear
+echo Lab 1
 git status
 git branch -vv
