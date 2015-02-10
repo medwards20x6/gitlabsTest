@@ -18,6 +18,7 @@ echo 'Creating commit1'
 git commit -a -m "lab1 commit1" &> .labState/log
 
 echo "This is a file" >> file1
+git add file1
 git commit --amend --no-edit
 
 printf '\n ### git status ###\n\n'
