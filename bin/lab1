@@ -26,5 +26,5 @@ echo "This is a file" > file3
 
 printf '\n ### git status ###\n\n'
 git status
-printf '\n ### git branch -vv ###\n\n'
+printf ' ### git branch -vv ###\n\n'
 git branch -vv
